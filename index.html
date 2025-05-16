@@ -191,28 +191,29 @@ With Marwadi university,Rajkot Gujarat.2024-2026
         </div>
     </section>
 
-
-    <section class="contact" id="contact">
-
+<section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
 
-        <form action="#">
-
+        <form action="https://formsubmit.co/alok11081@gmail.com" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="Email" placeholder="Email">
+                <input type="text" name="name" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Email" required />
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Phone Number">
-                <input type="text" placeholder="subject">
+                <input type="tel" name="phone" placeholder="Phone Number" required />
+                <input type="text" name="subject" placeholder="Subject" required />
             </div>
 
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
 
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <input type="hidden" name="_next" value="thankyou.html" />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <input type="submit" value="Send Message" class="btn" />
         </form>
     </section>
+
 
     <footer class="footer">
         <div class="social">
